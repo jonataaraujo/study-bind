@@ -1,3 +1,5 @@
+; Zona Principal
+
 $TTL    3600
 @       IN      SOA     freebsd.senai.local. root.senai.local. (         
                    2021091401           ; Serial
