@@ -1,0 +1,19 @@
+$TTL    3600
+@       IN      SOA     freebsd.senai.local. root.senai.local. (         
+                   2021091401           ; Serial
+
+                         3600           ; Refresh [1h]
+                          600           ; Retry   [10m]
+                        86400           ; Expire  [1d]
+                          600 )         ; Negative Cache TTL [1h]
+;
+@       IN      NS      freebsd.senai.local.
+@       IN      MX      10 freebsd.senai.local.
+
+freebsd     IN      A       192.168.3.139
+linux    IN      A       192.168.3.150
+sistema    IN      A       192.168.3.150
+
+pop     IN      CNAME   freebsd
+www     IN      CNAME   freebsd
+mail    IN      CNAME   freebsd
